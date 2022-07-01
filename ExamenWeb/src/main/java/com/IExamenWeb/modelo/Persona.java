@@ -10,38 +10,57 @@ import javax.persistence.Table;
 public class Persona {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     
-private int id;
-private String name;
-private String telefono;
+private String artista;
+private int precios;
+private int fecha;
+private int capacidad;
+private String lugar;
 
 public Persona() {
     
+
 }
 
-    public int getId() {
-        return id;
+    public String getArtista() {
+        return artista;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setArtista(String artista) {
+        this.artista = artista;
     }
 
-    public String getName() {
-        return name;
+    public int getPrecios() {
+        return precios;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPrecios(int precios) {
+        this.precios = precios;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public int getFecha() {
+        return fecha;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setFecha(int fecha) {
+        this.fecha = fecha;
     }
+
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    public String getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+    
 }
 
